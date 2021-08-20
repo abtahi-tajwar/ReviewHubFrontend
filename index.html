@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <!--<base href="/" />-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Favicons Icon -->
+<link rel="icon" href="#" type="image/x-icon" />
+<link rel="shortcut icon" href="#" type="image/x-icon" />
+<title>Citroen premium HTML5 &amp; CSS3 template</title>
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="app/lib/angular.min.js"></script>
+
+    <script src="app/lib/angular.route.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-menu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/revslider.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <title>Review Hub</title>
+  </head>
+  <body ng-app="myApp" class="cms-index-index cms-home-page home">
+    <div id="page" ng-controller="header">
+      <div ng-include="'views/inc/header.html'"></div>      
+      <div ng-view></div>
+      <div ng-include="'views/inc/footer.html'"></div>
+    </div>
+    <div ng-include="'views/inc/mobile-menu.html'"></div>
+    
+  </body>
+</html>
+
+<!-- Add Services here -->
+<script src="app/services/ajax.js"></script>
+<script src="app/routes.js"></script>
+
+
+<!-- Add Controllers here -->
+<script src="app/controllers/demo.js"></script>
+<script src="app/controllers/demo2.js"></script>
+<script src="app/controllers/products.js"></script>
+<script src="app/controllers/header.js"></script>
+<script src="app/controllers/home.js"></script>
+
+
+<script src="assets/js/jquery-3.2.1.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/revslider.js"></script> 
+<script src="assets/js/common.js"></script> 
+<script src="assets/js/owl.carousel.min.js"></script> 
+<script src="assets/js/jquery.mobile-menu.min.js"></script> 
+<script src="assets/js/countdown.js"></script> 
+
+<script>
+  jQuery(document).ready(function(){
+      jQuery('#rev_slider_4').show().revolution({
+          dottedOverlay: 'none',
+          delay: 5000,
+          startwidth: 1170,
+        startheight:510,
+
+          hideThumbs: 200,
+          thumbWidth: 200,
+          thumbHeight: 50,
+          thumbAmount: 2,
+
+          navigationType: 'thumb',
+          navigationArrows: 'solo',
+          navigationStyle: 'round',
+
+          touchenabled: 'on',
+          onHoverStop: 'on',
+          
+          swipe_velocity: 0.7,
+          swipe_min_touches: 1,
+          swipe_max_touches: 1,
+          drag_block_vertical: false,
+      
+          spinner: 'spinner0',
+          keyboardNavigation: 'off',
+
+          navigationHAlign: 'center',
+          navigationVAlign: 'bottom',
+          navigationHOffset: 0,
+          navigationVOffset: 20,
+
+          soloArrowLeftHalign: 'left',
+          soloArrowLeftValign: 'center',
+          soloArrowLeftHOffset: 20,
+          soloArrowLeftVOffset: 0,
+
+          soloArrowRightHalign: 'right',
+          soloArrowRightValign: 'center',
+          soloArrowRightHOffset: 20,
+          soloArrowRightVOffset: 0,
+
+          shadow: 0,
+          fullWidth: 'on',
+          fullScreen: 'off',
+
+          stopLoop: 'off',
+          stopAfterLoops: -1,
+          stopAtSlide: -1,
+
+          shuffle: 'off',
+
+          autoHeight: 'off',
+          forceFullWidth: 'on',
+          fullScreenAlignForce: 'off',
+          minFullScreenHeight: 0,
+          hideNavDelayOnMobile: 1500,
+      
+          hideThumbsOnMobile: 'off',
+          hideBulletsOnMobile: 'off',
+          hideArrowsOnMobile: 'off',
+          hideThumbsUnderResolution: 0,
+
+          hideSliderAtLimit: 0,
+          hideCaptionAtLimit: 0,
+          hideAllCaptionAtLilmit: 0,
+          startWithSlide: 0,
+          fullScreenOffsetContainer: ''
+      });
+  });
+  </script> 
+<!-- Hot Deals Timer 1--> 
+<script>
+    var dthen1 = new Date("12/25/17 11:59:00 PM");
+    start = "08/04/15 03:02:11 AM";
+    start_date = Date.parse(start);
+    var dnow1 = new Date(start_date);
+    if (CountStepper > 0)
+    ddiff = new Date((dnow1) - (dthen1));
+    else
+    ddiff = new Date((dthen1) - (dnow1));
+    gsecs1 = Math.floor(ddiff.valueOf() / 1000);
+
+    var iid1 = "countbox_1";
+    CountBack_slider(gsecs1, "countbox_1", 1);
+</script>
+</body>
+
+
+
