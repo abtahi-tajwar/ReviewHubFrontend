@@ -1,0 +1,553 @@
+<section class="main-container col2-left-layout">
+  <div class="container">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <ul>
+        <li class="home">
+          <a href="index-2.html" title="Go to Home Page">Home</a> <span>/</span>
+        </li>
+        <li><a href="grid.html" title="">Computers</a> <span>/ </span></li>
+        <li><a href="grid.html" title="">Components</a> <span>/</span></li>
+        <li><strong>Motherboard</strong></li>
+      </ul>
+    </div>
+    <!-- Breadcrumbs End -->
+    <div class="row">
+      <div class="col-sm-9 col-sm-push-3">
+        <div class="category-description std">
+          <div class="slider-items-products">
+            <div
+              id="category-desc-slider"
+              class="product-flexslider hidden-buttons"
+            >
+              <div
+                class="slider-items slider-width-col1 owl-carousel owl-theme"
+              >
+                <!-- Item -->
+                <div class="item">
+                  <a href="#"><img alt="" src="assets/images/category-img1.jpg" /></a>
+                  <div class="cat-img-title cat-bg cat-box">
+                    <div class="small-tag">Season 2021</div>
+                    <h2 class="cat-heading">Televisions</h2>
+                    <p>GET 40% OFF &sdot; Free Delivery</p>
+                  </div>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="item">
+                  <a href="#"><img alt="" src="assets/images/category-img2.jpg" /></a>
+                  <div class="cat-img-title cat-bg cat-box">
+                    <div class="small-tag">Xperia Brands</div>
+                    <h2 class="cat-heading">Smartwatches</h2>
+                    <p>Save 70% on all items</p>
+                  </div>
+                  <!-- End Item -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-title">
+          <h2>Computers</h2>
+          <p class="font-size-14 text-gray-90 mb-0">
+            Showing 1–35 of 62 results
+          </p>
+        </div>
+        <article class="col-main">
+          <div class="pro-listing">
+            <div class="toolbar">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-4 col-md-4 col-3">
+                  <div class="product-list-grid">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#" class="button-grid nav-link active">
+                          <i class="fa fa-th-large"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="button-list nav-link">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-sm-8 col-md-8 col-9">
+                  <div class="pro-sorting">
+                    <form class="woocommerce-showing">
+                      <select
+                        name="showby"
+                        aria-label="show"
+                        class="show-filter"
+                      >
+                        <option value="Show 20" selected="selected">
+                          Show 20
+                        </option>
+                        <option value="Show 30">Show 30</option>
+                        <option value="Show 40">Show 40</option>
+                        <option value="Show 50">Show 50</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="pro-sorting">
+                    <form class="woocommerce-ordering">
+                      <select name="orderby" aria-label="Shop order">
+                        <option value="popularity">Sort by popularity</option>
+                        <option value="rating">Sort by average rating</option>
+                        <option value="date">Sort by latest</option>
+                        <option value="price">
+                          Sort by price: low to high
+                        </option>
+                        <option value="price-desc" selected="selected">
+                          Sort by price: high to low
+                        </option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-products" *ngIf="hasAdvertise; else noAdvertiseBlock">
+              <ul class="products-grid">
+                <li class="item col-lg-3 col-md-3 col-sm-3 col-xs-6" ng-repeat="ad in advertises">
+                    <div class="item-inner">
+                      <div class="item-img">
+                        <div class="item-img-info"> <a class="product-image" title={{ad.Title}} href="product_detail.html"> <img alt={{ad.Title}} src={{ad.Image}}> </a>
+                          <div class="box-hover">
+                            <ul class="add-to-links">
+                              <li><a class="link-quickview" href="quick_view.html"></a> </li>
+                              <li><a class="link-wishlist" href="wishlist.html"></a> </li>
+                              <li><a class="link-compare" href="compare.html"></a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-info">
+                        <div class="info-inner">
+                          <div class="item-title"> <a title="Retis lapen casen" href="product_detail.html">{{ad.Title}}r</a> </div>
+                          <div class="brand">Altima</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End  Item inner--> 
+                  </li>
+              </ul>
+            </div>
+            <ng-template #noAdvertiseBlock>
+                <div class="category-products container">
+                    No Advertises To Show
+                </div>
+            </ng-template>
+            <div class="pages">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+
+            <br />
+          </div>
+        </article>
+        <!--	///*///======    End article  ========= //*/// -->
+      </div>
+      <aside class="col-left sidebar col-sm-3 col-xs-12 col-sm-pull-9">
+        <div class="widget widget-categories">
+          <div class="block-title">Browse Categories</div>
+          <div id="accordion" class="accordion">
+            <div class="card border-0 mb-2">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse1"
+                    aria-expanded="true"
+                    >Accessories</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse1" class="collapse in" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Soundbars</a></li>
+                    <li><a href="#">Power Banks</a></li>
+                    <li><a href="#">Mobile Cases</a></li>
+                    <li><a href="#">Pen Drives</a></li>
+                    <li><a href="#">Mouse & Keyboards</a></li>
+                    <li><a href="#">Memory Cards</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 mb-2">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse2"
+                    >Computers</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse2" class="collapse" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Desktop</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Motherboards</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 mb-2">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse3"
+                    >Appliances</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Vacuum Cleaners</a></li>
+                    <li><a href="#">Air Coolers</a></li>
+                    <li><a href="#">Inverters</a></li>
+                    <li><a href="#">Immersion Rods</a></li>
+                    <li><a href="#">Water Purifiers</a></li>
+                    <li><a href="#">Voltage Stabilizers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 mb-2">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse4"
+                    >Cameras & Photography</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse4" class="collapse" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">DSLR & Mirrorless</a></li>
+                    <li><a href="#">Bridge Cameras</a></li>
+                    <li><a href="#">Sports & Action</a></li>
+                    <li><a href="#">Tripods</a></li>
+                    <li><a href="#">Camera Lens</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 mb-2">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse5"
+                    >Refrigerators</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse5" class="collapse" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Single Door</a></li>
+                    <li><a href="#">Double Door</a></li>
+                    <li><a href="#">Triple Door</a></li>
+                    <li><a href="#">Side by Side</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-header">
+                <h6 class="mb-0">
+                  <a
+                    class="link-title"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse6"
+                    >Watches</a
+                  >
+                </h6>
+              </div>
+              <div id="collapse6" class="collapse" data-parent="#accordion">
+                <div class="card-body text-muted">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Waterproof</a></li>
+                    <li><a href="#">Automatic</a></li>
+                    <li><a href="#">Stylish</a></li>
+                    <li><a href="#">Metal</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget widget-filter">
+          <div class="block-title">Filter</div>
+
+          <div class="widget-brand">
+            <h5 class="widget-title">Brand</h5>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck1"
+              />
+              <label class="custom-control-label" for="brandCheck1">
+                Citroen</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck2"
+              />
+              <label class="custom-control-label" for="brandCheck2">
+                Tiagoo</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck3"
+              />
+              <label class="custom-control-label" for="brandCheck3">
+                Organtic</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck4"
+              />
+              <label class="custom-control-label" for="brandCheck4">
+                Dealsdot</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck5"
+              />
+              <label class="custom-control-label" for="brandCheck5">
+                Harrier</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="brandCheck6"
+              />
+              <label class="custom-control-label" for="brandCheck6">
+                Unicorn</label
+              >
+            </div>
+          </div>
+
+          <div class="widget-color">
+            <h5 class="widget-title">Colors</h5>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck1"
+              />
+              <label class="custom-control-label" for="colorCheck1"
+                ><span style="background-color: rgb(60, 179, 113)"></span>
+                Green</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck2"
+              />
+              <label class="custom-control-label" for="colorCheck2"
+                ><span style="background-color: rgb(72, 118, 255)"></span>
+                Blue</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck3"
+              />
+              <label class="custom-control-label" for="colorCheck3"
+                ><span style="background-color: rgb(249, 79, 21)"></span>
+                Orange</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck4"
+              />
+              <label class="custom-control-label" for="colorCheck4"
+                ><span style="background: rgb(92, 36, 110)"></span>
+                Purple</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck5"
+              />
+              <label class="custom-control-label" for="colorCheck5"
+                ><span style="background-color: rgb(255, 195, 0)"></span>
+                Yellow</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck6"
+              />
+              <label class="custom-control-label" for="colorCheck6"
+                ><span style="background-color: rgb(192, 192, 192)"></span>
+                Silver</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck7"
+              />
+              <label class="custom-control-label" for="colorCheck7"
+                ><span style="background-color: rgb(41, 36, 33)"></span>
+                Black</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="colorCheck8"
+              />
+              <label class="custom-control-label" for="colorCheck8"
+                ><span style="background-color: rgb(128, 0, 0)"></span>
+                Maroon</label
+              >
+            </div>
+          </div>
+
+          <div class="widget-ratings">
+            <h5 class="widget-title">Customer Ratings</h5>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="rateCheck1"
+              />
+              <label class="custom-control-label" for="rateCheck1">
+                4 <i class="fa fa-star" aria-hidden="true"></i> and above
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="rateCheck2"
+              />
+              <label class="custom-control-label" for="rateCheck2">
+                3 <i class="fa fa-star" aria-hidden="true"></i> and above</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="rateCheck3"
+              />
+              <label class="custom-control-label" for="rateCheck3">
+                2 <i class="fa fa-star" aria-hidden="true"></i> and above</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="rateCheck4"
+              />
+              <label class="custom-control-label" for="rateCheck4">
+                1 <i class="fa fa-star" aria-hidden="true"></i> and above</label
+              >
+            </div>
+          </div>
+
+          <div class="widget-price">
+            <h5>Price Range</h5>
+            <div class="wrapper">
+              <fieldset class="filter-price">
+                <div class="price-field">
+                  <input
+                    type="range"
+                    min="100"
+                    max="500"
+                    value="135"
+                    id="lower"
+                  />
+                  <input
+                    type="range"
+                    min="100"
+                    max="500"
+                    value="500"
+                    id="upper"
+                  />
+                </div>
+                <div class="price-wrap">
+                  <div class="price-container">
+                    <div class="price-wrap-1">
+                      <label for="one">$</label>
+                      <input id="one" />
+                    </div>
+                    <div class="price-wrap_line">-</div>
+                    <div class="price-wrap-2">
+                      <label for="two">$</label>
+                      <input id="two" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

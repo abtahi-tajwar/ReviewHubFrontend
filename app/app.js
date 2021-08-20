@@ -18,6 +18,14 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
         templateUrl : "views/pages/products.html",
         controller: 'products'
     })
+    .when("/advertises/:id", {
+        templateUrl : "views/pages/Advertises.html",
+        controller : "advertises"
+    })
+    .when("/advertise/create", {
+        templateUrl: "views/pages/CreateAdvertise.html",
+        controller: "CreateAdvertise"
+    })
     .otherwise({
         redirectTo:"/"
     });
