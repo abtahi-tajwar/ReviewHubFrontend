@@ -22,6 +22,10 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
         templateUrl : "views/pages/Advertises.html",
         controller : "advertises"
     })
+    .when("/product_detail/:id", {
+        templateUrl : "views/pages/product_detail.html",
+        controller : "product_detail"
+    })
     .when("/advertise/create", {
         templateUrl: "views/pages/CreateAdvertise.html",
         controller: "CreateAdvertise"

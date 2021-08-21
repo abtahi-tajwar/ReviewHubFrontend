@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorial</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <!-- CSS -->
+  <meta name="robots" content="noindex,follow" />
 <!-- Favicons Icon -->
 <link rel="icon" href="#" type="image/x-icon" />
 <link rel="shortcut icon" href="#" type="image/x-icon" />
@@ -25,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-menu.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/css/sstyle.css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/css/revslider.css">
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
@@ -33,13 +42,14 @@
     <title>Review Hub</title>
   </head>
   <body ng-app="myApp" class="cms-index-index cms-home-page home">
+    <div class="body-wrapper">
     <div id="page" ng-controller="header">
-      <div ng-include="'views/inc/header.html'"></div>      
+      <div ng-include="'views/inc/header.html'"></div>
       <div ng-view></div>
       <div ng-include="'views/inc/footer.html'"></div>
     </div>
     <div ng-include="'views/inc/mobile-menu.html'"></div>
-    
+  </div>
   </body>
 </html>
 
@@ -55,16 +65,19 @@
 <script src="app/controllers/header.js"></script>
 <script src="app/controllers/home.js"></script>
 <script src="app/controllers/advertises.js"></script>
+<script src="app/controllers/product_detail.js"></script>
 <script src="app/controllers/create_advertise.js"></script>
 
 
-<script src="assets/js/jquery-3.2.1.min.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/revslider.js"></script> 
-<script src="assets/js/common.js"></script> 
-<script src="assets/js/owl.carousel.min.js"></script> 
-<script src="assets/js/jquery.mobile-menu.min.js"></script> 
-<script src="assets/js/countdown.js"></script> 
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/revslider.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.mobile-menu.min.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/script.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
 
 <script>
   jQuery(document).ready(function(){
@@ -85,12 +98,12 @@
 
           touchenabled: 'on',
           onHoverStop: 'on',
-          
+
           swipe_velocity: 0.7,
           swipe_min_touches: 1,
           swipe_max_touches: 1,
           drag_block_vertical: false,
-      
+
           spinner: 'spinner0',
           keyboardNavigation: 'off',
 
@@ -124,7 +137,7 @@
           fullScreenAlignForce: 'off',
           minFullScreenHeight: 0,
           hideNavDelayOnMobile: 1500,
-      
+
           hideThumbsOnMobile: 'off',
           hideBulletsOnMobile: 'off',
           hideArrowsOnMobile: 'off',
@@ -137,8 +150,8 @@
           fullScreenOffsetContainer: ''
       });
   });
-  </script> 
-<!-- Hot Deals Timer 1--> 
+  </script>
+<!-- Hot Deals Timer 1-->
 <script>
     var dthen1 = new Date("12/25/17 11:59:00 PM");
     start = "08/04/15 03:02:11 AM";
@@ -154,6 +167,3 @@
     CountBack_slider(gsecs1, "countbox_1", 1);
 </script>
 </body>
-
-
-

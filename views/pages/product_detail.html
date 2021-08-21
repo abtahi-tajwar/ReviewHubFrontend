@@ -1,0 +1,30 @@
+<div class="content-wraper">
+    <div class="container">
+        <div class="row single-product-area">
+            <div class="col-lg-5 col-md-6">
+               <!-- Product Details Left -->
+                <div class="product-details-left">
+                    <div class="product-details-images slider-navigation-1">
+                        <div class="lg-image">
+                            <a class="popup-img venobox vbox-item" href="images/product/large-size/1.jpg" data-gall="myGallery">
+                                <img alt={{product_detail.Title}} src={{product_detail.Image}}>
+                            </a>
+                        </div>
+
+                </div>
+                <!--// Product Details Left -->
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+                <div class="product-details-view-content pt-60">
+                    <div class="product-info">
+                        <h2>Product Name: {{product_detail.Title}}</h2>
+                        <h2>Product Description: {{product_detail.Description}}</h2>
+                        <h2>post at: {{product_detail.Created_at}}</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

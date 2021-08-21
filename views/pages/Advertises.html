@@ -115,24 +115,16 @@
                 <li class="item col-lg-3 col-md-3 col-sm-3 col-xs-6" ng-repeat="ad in advertises">
                     <div class="item-inner">
                       <div class="item-img">
-                        <div class="item-img-info"> <a class="product-image" title={{ad.Title}} href="product_detail.html"> <img alt={{ad.Title}} src={{ad.Image}}> </a>
-                          <div class="box-hover">
-                            <ul class="add-to-links">
-                              <li><a class="link-quickview" href="quick_view.html"></a> </li>
-                              <li><a class="link-wishlist" href="wishlist.html"></a> </li>
-                              <li><a class="link-compare" href="compare.html"></a> </li>
-                            </ul>
-                          </div>
+                        <div class="item-img-info"> <a class="product-image" title={{ad.Title}} href="#!/product_detail/{{ad.Id}}"> <img alt={{ad.Title}} src={{ad.Image}}> </a>
                         </div>
                       </div>
                       <div class="item-info">
                         <div class="info-inner">
-                          <div class="item-title"> <a title="Retis lapen casen" href="product_detail.html">{{ad.Title}}r</a> </div>
-                          <div class="brand">Altima</div>
+                          <div class="item-title"> <a title="Retis lapen casen" href="#!/product_detail/{{ad.Id}}">{{ad.Title}}</a> </div>
                         </div>
                       </div>
                     </div>
-                    <!-- End  Item inner--> 
+                    <!-- End  Item inner-->
                   </li>
               </ul>
             </div>

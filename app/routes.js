@@ -4,6 +4,7 @@ const routes = {
     getAllAdvertises: `${base}/api/Advertise/GetAll`,
     getFeaturedAdvertises: `${base}/api/Advertise/Featured/Get`,
     getAdvertiseByCategory: (id => `${base}/api/Advertise/GetByCategory/${id}`),
+    product_detail: (id => `${base}/api/Advertise/${id}`),
     createAdvertise: `${base}/api/Advertise/Create`
 }
 const postFormValue = async (url, data) => {
@@ -12,7 +13,7 @@ const postFormValue = async (url, data) => {
         console.log(key, value)
         formData.append(key, value)
     }
- 
+
     try {
         let res =  await fetch(url, {
             method: 'POST',
